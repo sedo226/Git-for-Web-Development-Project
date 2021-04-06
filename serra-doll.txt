@@ -32,24 +32,58 @@ link to finished codepen: https://codepen.io/sed226/pen/xxgLJwN?editors=1100
     15. How do I reference an id?
         In CSS: using the `#` sign and then the id name - e.g. `#idName`
     16. What is the difference between a section and a div
-    17. What is CSS used for? 
+        A `section` element 'groups' its child elements, whereas the div element does not carry any meaning when it comes to HTML outlines
+    17. What is CSS used for?
+        Styling
     18. How to we select an element? Example - every h2 on the page
+        In CSS: just by the element's tag name - e.g `h2 {}`
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
+        Class names can be used multiple times, whereas an id name can only be used once
+            - class: assign an element a class name to use as a selector in our CSS file and add styling, then on another element that requires the same styling properties add that class name as well
+            - id: use an id to give an element a unique identifier that you can later reference in a CSS or JS file - in CSS the id selector has a higher specificity 
     20. How do we select classes in CSS?
+        By adding a `.` in front of the class name - e.g. `.className {}`
     21. How do we select a p element with a single class of “human””?
+        In CSS: `p.human`
     22. What is a parent child selector? When would this be useful? 
+        Adding a `>` character in between the CSS selector for the parent & child - e.g. `.parentClassName > .childClassName {}` - this is useful for specificity purposes & organization
     23. How do you select all links within a div with the class of sidebar?
+        In CSS: `div.sidebar a`
     24. What is a pseudo selector?
-    25. What do we use the change the spacing between lines?
+        Used for selecting an element in CSS when it is in a particular state - i.e. hover, focus, etc.
+    25. What do we use to change the spacing between lines?
+        `line-height`
     26. What do we use to change the spacing between letters?
+        `letter-spacing`
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+        `text-transform`
     28. How do I add a 1px border around my div that is dotted and black?
+        `border: 1px dotted black`
     29. How do I select everything on the page? 
+        `*` - universal selector in CSS
     30. How do I write a comment in CSS?
+        /* */
     31. How do I find out what file I am in, when I am using the command line? 
+        pwd
     32. Using the command line - how do I see a list of files/folders in my current folder?
+        ls
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
+        `rm fileName` - need to be careful because most terminals won't prompt you to confirm
     34. Why should I use version control? 
+        To keep track of, and document, changes to your projects and prevent code conflicts when working with a team
     35. How often should I commit to github?
+        Each time you complete a specific task (or roughly every 20 min if changes are actively being made)
     36. What is the command we would use to push our repo up to github? 
+        `git push -u origin branch-name`
     37. Walk me through Lambda's git flow. 
+        1. Fork the remote repo in github
+        2. Clone the repo onto your machine
+            - In your terminal, `cd` into the directory you want to save your repo in then run `git clone link-to-repo`
+        3. Create a new branch with the following naming syntax `firstName-lastName`
+            - In your terminal, `cd` into the repository then run `git checkout -b "firstName-LastName"`
+        4. Make your code changes in VSCode & commit your changes to that branch
+            - `git status` - check for changes
+            - `git add .` - stage all changes
+            - `git commit -m "message describing the changes in your commit"`
+            - `git push -u origin firstName-lastName` 
+            - In github, open a pull request from your `firstName-lastName` branch into `master` - ensure that you are on your forked version of the repo
