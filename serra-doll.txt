@@ -1,22 +1,36 @@
 link to finished codepen: https://codepen.io/sed226/pen/xxgLJwN?editors=1100
 
     1. What is Semantic HTML? 
-    It's HTML that gives meaning to our markup
+        It's HTML that gives meaning to our markup
     2. What is HTML used for? 
-    It's used for the structure of our website
+        It's used for the structure of our website
     3. What is an attribute and where do we put it? 
+        Attributes provide us a way to add additional data to an HTML element - they are included within the opening/start tag of the element
     4. What is the h1 tag used for? How many times should I use it on a page?
+        Used to indicate the heading of our website - should ideally only be used once per page, but technically it can be used multiple times if implemented correctly according to browser standards 
     5. Name two tags that have required attributes
+        - `a` tag requires the `href` attribute 
+        - `img` tag requires the `alt` attribute 
     6. What do we put in the head of our HTML document? 
+        Metadata for our document, e.g. links to our CSS resources
     7. What is an id? 
+        Unique identifier attribute for an HTML element
     8. What elements can I add an id to? 
+        Any HTML element
     9. How many times can I use the same id on a page? 
+        Only once
     10. What is a class? 
+        An attribute that gives an element a class name that can be referenced later for styling/js purposes
     11. What elements can I add a class to? 
-    12. How many times can I use the same class on a page? 
+        Any HTML element
+    12. How many times can I use the same class on a page?
+        As many as needed/desired 
     13. How do I get my link to open in a new tab?
+        Add `target="_blank"` attribute to your opening `a` tag like so: `<a href="#" target="_blank">`
     14. What is the alt attribute in the image tag used for? 
+        Used primarily for accessibility purposes - it is the alternate text for an `img` element incase the image cannot be displayed or for screen readers - should adequately describe the image
     15. How do I reference an id?
+        In CSS: using the `#` sign and then the id name - e.g. `#idName`
     16. What is the difference between a section and a div
     17. What is CSS used for? 
     18. How to we select an element? Example - every h2 on the page
